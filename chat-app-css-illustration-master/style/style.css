@@ -1,0 +1,36 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  overflow: hidden;
+}
+
+.page-wrapper {
+  display: flex;
+  gap: 50px;
+  height: 100svh;
+}
+.page-wrapper .rounded-element1 {
+  height: 130%;
+  width: 35vw;
+  min-width: 400px;
+  border-radius: 100vw;
+  background: linear-gradient(rgb(233, 64, 255), rgb(146, 59, 252));
+  position: relative;
+  bottom: 40%;
+  left: -5%;
+}
+.page-wrapper .rounded-element2 {
+  height: 120%;
+  width: 35vw;
+  min-width: 400px;
+  border-radius: 100vw;
+  background-color: rgb(146, 59, 252);
+  opacity: 0.05;
+  position: absolute;
+  right: -5%;
+  top: 10%;
+}/*# sourceMappingURL=style.css.map */
