@@ -1,6 +1,81 @@
+.roboto-thin {
+    font-family: "Roboto", sans-serif;
+    font-weight: 100;
+    font-style: normal;
+  }
+  
+  .roboto-light {
+    font-family: "Roboto", sans-serif;
+    font-weight: 300;
+    font-style: normal;
+  }
+  
+  .roboto-regular {
+    font-family: "Roboto", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+  }
+  
+  .roboto-medium {
+    font-family: "Roboto", sans-serif;
+    font-weight: 500;
+    font-style: normal;
+  }
+  
+  .roboto-bold {
+    font-family: "Roboto", sans-serif;
+    font-weight: 700;
+    font-style: normal;
+  }
+  
+  .roboto-black {
+    font-family: "Roboto", sans-serif;
+    font-weight: 900;
+    font-style: normal;
+  }
+  
+  .roboto-thin-italic {
+    font-family: "Roboto", sans-serif;
+    font-weight: 100;
+    font-style: italic;
+  }
+  
+  .roboto-light-italic {
+    font-family: "Roboto", sans-serif;
+    font-weight: 300;
+    font-style: italic;
+  }
+  
+  .roboto-regular-italic {
+    font-family: "Roboto", sans-serif;
+    font-weight: 400;
+    font-style: italic;
+  }
+  
+  .roboto-medium-italic {
+    font-family: "Roboto", sans-serif;
+    font-weight: 500;
+    font-style: italic;
+  }
+  
+  .roboto-bold-italic {
+    font-family: "Roboto", sans-serif;
+    font-weight: 700;
+    font-style: italic;
+  }
+  
+  .roboto-black-italic {
+    font-family: "Roboto", sans-serif;
+    font-weight: 900;
+    font-style: italic;
+  }
+
 $primaryColor: rgb(146 59 252);
 $secondaryColor: rgb(233 64 255);
 $darkPurple: rgb(60 40 81);
+$lightPurple: rgb(255 231 255);
+$textMessage: hsl(274, 51%, 63%);
+$boxMessage: rgb(237 229 243);
 *{
     padding: 0;
     margin: 0;
@@ -21,8 +96,179 @@ body{
         border-radius: 100vw;
         background: linear-gradient($secondaryColor, $primaryColor);
         position: relative;
-        bottom: 40%;
+        bottom: 45%;
         left: -5%;
+
+        .smartphone{
+            background-color: rgb(241, 241, 241);
+            outline: 10px solid white;
+            height: 31em;
+            width: 14.5em;
+            border-radius: 1.5em;
+            position: absolute;
+            bottom: 4%;
+            right: -180px;
+            box-shadow: rgba(0, 0, 0, 0.141) 5px 10px 20px 20px;
+            overflow: hidden;
+            .smartphone-head{
+                background: linear-gradient(to left, $secondaryColor, $primaryColor);
+                width: 100%;
+                height: 4.4em;
+                border-radius: 0 0 .5em .5em;
+                display: flex;
+                align-items: center;
+                justify-content: space-between;
+                padding-inline: 1em;
+                padding-top: 1.5em;
+                color: $lightPurple;
+                .user-info{
+                    display: flex;
+                    gap: .5em;
+                    font-family: Roboto;
+                    .menu-arrow{
+                        rotate: 90deg;
+                        font-size: .7em;
+                        display: flex;
+                        justify-content: center;
+                        align-items: center;
+                    }
+                    .username-wrapper{
+                        display: flex;
+                        flex-direction: column;
+                        gap: .2em;
+                        .contact-name{
+                            font-size: .7em;
+                            font-weight: 500;
+                        }
+                        .contact-status{
+                            font-weight: 300;
+                            font-size: .5em;
+                            opacity: 0.6;
+                        }
+                    }
+                    img{
+                        border-radius: 3em;
+                        border: .11em solid $lightPurple;
+                        object-fit: cover;
+                        display: block;
+                        width: 1.7em;
+                        height: 1.7em;
+                    }
+                }
+                .menu-dots{
+                    rotate: 90deg;
+                    font-size: .6em;
+                }
+                .smartphone-middle-top{
+                    position: absolute;
+                    background-color: white;
+                    width: 56%;
+                    height: 3em;
+                    border-radius: 1.2em;
+                    transform: translate(50%, -50%);
+                    position: absolute;
+                    right: 50%;
+                    top: 0;
+                }
+            }
+            .smartphone-chat-body{
+                padding: 10px;
+                display: flex;
+                gap: .7em;
+                flex-direction: column;
+                .msg-box{
+                    font-family: Roboto;
+                    font-size: .5em;
+                    padding: 1em;
+                    max-width: 15em;
+                }
+                .msg-sent{
+                    border-radius: 1em 1em 1em .4em;
+                    font-weight: 400;
+                    background-color: $boxMessage;
+                    color: $textMessage;
+                }
+                .msg-received{
+                    font-weight: 300;
+                    align-self: flex-end;
+                    border-radius: 1em 1em .4em 1em;
+                    background-color: white;
+                    color: $darkPurple;
+                    box-shadow: rgba(0, 0, 0, 0.055) 2px 6px 10px 0;
+                }
+                .img-box{
+                    gap: .6em;
+                    display: flex;
+                    align-self: flex-end;
+                    max-width: 8.3em;
+                    img{
+                        max-width: 29%;
+                        border-radius: .6em;
+                        object-fit: cover;
+                    }
+                }
+                .selection-box{
+                    display: flex;
+                    justify-content: space-between;
+                    align-items: center;
+                    background: linear-gradient(to left, $primaryColor, $secondaryColor);
+                    color: rgb(249, 221, 255);
+                    font-weight: 300;
+                    min-width: 19em;
+                    border-radius: 1.2em 1.2em 1.2em .6em;
+                    padding-right: 2em;
+                    .selection-description{
+                        display: flex;
+                        align-items: center;
+                        gap: 1em;
+                        .checkbox{
+                            display: inline-block;
+                            height: 1.7em;
+                            width: 1.7em;
+                            border: .1em solid rgb(243, 182, 255);
+                            border-radius: 2em;
+                        }
+                    }
+                    .price{
+                        color: #f1f1f1;
+                        font-weight: 1000;
+                        font-size: 1.7em;
+                    }
+                }
+                .send-message-box{
+                    margin-top: .2em;
+                    display: flex;
+                    width: 100%;
+                    justify-content: space-between;
+                    align-items: center;
+                    font-family: Roboto;
+                    background-color: white;
+                    padding: .3em .3em .3em 1.3em;
+                    border-radius: 100px;
+                    // position: relative;
+                    .placeholder{
+                        font-weight: 500;
+                        font-size: .5em;
+                        color: $darkPurple;
+                        opacity: 0.2;
+                    }
+                    .send-btn{
+                        width: 1.5em;
+                        height: 1.5em;
+                        display: flex;
+                        justify-content: center;
+                        align-items: center;
+                        border-radius: 100px;
+                        background-color: $darkPurple;
+                        i{
+                            font-size: .8em;
+                            color: white;
+                            display: flex;
+                        }
+                    }
+                }
+            }
+        }
     }
 
     .rounded-element2{
