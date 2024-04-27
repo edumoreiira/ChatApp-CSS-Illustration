@@ -104,7 +104,7 @@ body{
         .smartphone{
             background-color: rgb(241, 241, 241);
             outline: 10px solid white;
-            max-height: 34em;
+            max-height: 32em;
             width: 14.5em;
             border-radius: 1.5em;
             position: absolute;
@@ -305,4 +305,42 @@ body{
         right: -13%;
         top: 10%;
     }
+}
+
+@media (max-width: 850px) {
+    body{
+        overflow: auto;
+    }
+ .page-wrapper{
+    height: auto;
+    flex-direction: column;
+    overflow: auto;
+    .rounded-element1{
+        height: clamp(60em, 100svh, 70em);
+        margin-top: -40svh;
+        margin-left: -30vw;
+        position: static;
+        .smartphone{
+            position: relative;
+            left: 80vw;
+            top: 43svh;
+            transform: translate(-50%);
+        }
+    }
+
+    .rounded-element2{
+        display: none;
+    }
+    .textDescription{
+        padding-inline: 2em;
+        margin: 0;
+        align-items: center;
+        max-width: 37em;
+        margin: 0 auto;
+
+        p{
+            text-align: center;
+        }
+    }
+ }       
 }
