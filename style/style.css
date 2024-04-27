@@ -78,6 +78,7 @@
 
 body {
   overflow: hidden;
+  background-color: rgb(250, 250, 250);
 }
 
 .page-wrapper {
@@ -94,17 +95,18 @@ body {
   position: relative;
   bottom: 45%;
   left: -5%;
+  font-size: 15px;
 }
 .page-wrapper .rounded-element1 .smartphone {
   background-color: rgb(241, 241, 241);
   outline: 10px solid white;
-  height: 31em;
+  max-height: 34em;
   width: 14.5em;
   border-radius: 1.5em;
   position: absolute;
   bottom: 4%;
-  right: -180px;
-  box-shadow: rgba(0, 0, 0, 0.141) 5px 10px 20px 20px;
+  right: -170px;
+  box-shadow: rgba(0, 0, 0, 0.044) 5px 10px 20px 20px;
   overflow: hidden;
 }
 .page-wrapper .rounded-element1 .smartphone .smartphone-head {
@@ -188,6 +190,7 @@ body {
   color: hsl(274, 51%, 63%);
 }
 .page-wrapper .rounded-element1 .smartphone .smartphone-chat-body .msg-received {
+  font-size: 0.55em;
   font-weight: 300;
   align-self: flex-end;
   border-radius: 1em 1em 0.4em 1em;
@@ -266,14 +269,34 @@ body {
   color: white;
   display: flex;
 }
+.page-wrapper .textDescription {
+  font-family: Roboto;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  margin-left: clamp(6rem, 18vw, 12rem);
+  padding-right: 1.5em;
+  color: rgb(60, 40, 81);
+  max-width: 28em;
+}
+.page-wrapper .textDescription h1 {
+  font-size: 2.5em;
+  font-weight: 600;
+  margin-bottom: 0.5em;
+}
+.page-wrapper .textDescription p {
+  color: rgb(167, 167, 167);
+  line-height: 1.7em;
+  font-weight: 400;
+}
 .page-wrapper .rounded-element2 {
   height: 120%;
   width: 35vw;
   min-width: 400px;
   border-radius: 100vw;
   background-color: rgb(146, 59, 252);
-  opacity: 0.05;
+  opacity: 0.04;
   position: absolute;
-  right: -5%;
+  right: -13%;
   top: 10%;
 }/*# sourceMappingURL=style.css.map */
