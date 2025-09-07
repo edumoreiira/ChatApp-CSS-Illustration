@@ -8,7 +8,7 @@ Todo o design, incluindo as formas de fundo complexas e a interface do smartphon
 
 **Visualize o projeto em ação acessando o link do GitHub Pages:**
 
-### **[https://edumoreiira.github.io/ChatApp-Design/](https://edumoreiira.github.io/ChatApp-Css-Illustration/)**
+### **[https://edumoreiira.github.io/ChatApp-CSS-Illustration/](https://edumoreiira.github.io/ChatApp-CSS-Illustration/)**
 
 ## ✨ Funcionalidades
 
